@@ -17,7 +17,7 @@ class Song < ActiveRecord::Base
       else
         str= str+value
       end
-    value
+    str 
  end
 
 end
