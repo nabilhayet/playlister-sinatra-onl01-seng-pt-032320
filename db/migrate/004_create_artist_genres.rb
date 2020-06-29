@@ -1,4 +1,4 @@
-class CreateArtistGenres < ActiveRecord::Migration[4.2]
+class CreateArtistGenres < ActiveRecord::Migration[5.2]
   def change
     create_table :artist_genres do |t|
       t.integer :artist_id
