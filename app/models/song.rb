@@ -4,6 +4,12 @@ class Song < ActiveRecord::Base
   has_many :genres, through: :song_genres
 
   def find_by_slug(value)
-    value.slug
+    @song = Song.find_by_id(value)
+    
   end
+
+  def slug(song)
+    @updated =
+  end
+
 end
