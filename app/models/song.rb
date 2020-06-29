@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
 
   def slug
     name = self.name
-    for (int i = 0; i < name.length(); ++i) { 
+    for (int i = 0; i < name.length(); ++i) {
         if (name[i] == ' ') {
 
             name[i] = '-';
