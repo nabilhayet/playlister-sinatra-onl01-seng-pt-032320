@@ -3,13 +3,13 @@ class Song < ActiveRecord::Base
   has_many :song_genres
   has_many :genres, through: :song_genres
 
-  def find_by_slug(value)
+  def find_by_slug
     @song = Song.find_by_id(value)
 
   end
 
   def slug
-    binding.pry
+    @name = self.name 
   end
 
 end
