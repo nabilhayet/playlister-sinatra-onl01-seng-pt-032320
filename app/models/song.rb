@@ -13,8 +13,8 @@ class Song < ActiveRecord::Base
       if value == ' '
         value = '-'
         binding.pry
-    end
+      end
     value
-  end
-
+ end
+ 
 end
