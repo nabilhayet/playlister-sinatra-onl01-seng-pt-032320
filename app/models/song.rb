@@ -19,5 +19,5 @@ class Song < ActiveRecord::Base
       end
     str
  end
-
 end
+end 
