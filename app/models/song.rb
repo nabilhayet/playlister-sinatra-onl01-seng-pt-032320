@@ -5,11 +5,11 @@ class Song < ActiveRecord::Base
 
   def find_by_slug
     @song = Song.find_by_id(value)
-
   end
 
   def slug
-    @name = self.name 
+    name = self.name
+    
   end
 
 end
