@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
   end
 
   def slug(song)
-    @updated =
+    binding.pry
   end
 
 end
