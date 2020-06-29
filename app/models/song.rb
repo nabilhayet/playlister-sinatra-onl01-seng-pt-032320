@@ -12,7 +12,7 @@ class Song < ActiveRecord::Base
     name.each do |value|
       if value == ' '
         value = '-'
-    end 
+    end
     for (int i = 0; i < name.length(); ++i) {
         if (name[i] == ' ') {
 
