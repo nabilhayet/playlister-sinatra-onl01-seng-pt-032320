@@ -9,10 +9,12 @@ class Song < ActiveRecord::Base
 
   def slug
     name = self.name
+    str=""
     name.map do |value|
       if value == " "
         value = "-"
-        binding.pry
+      else
+        str= str+value 
       end
     value
  end
