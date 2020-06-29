@@ -9,7 +9,15 @@ class Song < ActiveRecord::Base
 
   def slug
     name = self.name
-    name.replace(/\s+/, '-')
+    for (int i = 0; i < name.length(); ++i) { 
+
+        // Changing the ith character
+        // to '-' if it's a space.
+        if (str[i] == ' ') {
+
+            str[i] = '-';
+        }
+    }
   end
 
 end
