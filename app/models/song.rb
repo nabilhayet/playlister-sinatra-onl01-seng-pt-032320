@@ -12,8 +12,9 @@ class Song < ActiveRecord::Base
     name.each do |value|
       if value == ' '
         value = '-'
+        binding.pry
     end
-    value 
+    value
   end
 
 end
