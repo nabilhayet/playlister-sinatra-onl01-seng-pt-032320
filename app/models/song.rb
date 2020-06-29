@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
 
   end
 
-  def slug(song)
+  def slug
     binding.pry
   end
 
