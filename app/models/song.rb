@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
 
   def slug
     name = self.name
-    
+    name.replace(/\s+/g, '-')
   end
 
 end
